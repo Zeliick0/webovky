@@ -32,7 +32,7 @@ function disableCards() {
     secondCard.removeEventListener('click', flipCard);
     matches++;
     if (matches === 3) {
-        showPopup();
+        setTimeout(showPopup, 500); // Delay the win popup by 500ms
     }
     resetBoard();
 }
@@ -52,14 +52,12 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 6);
         card.style.order = randomPos;
     });
-})();
-
-cards.forEach(card => card.addEventListener('click', flipCard));
+}
 
 function resetGame() {
     tries = 0;
@@ -80,3 +78,6 @@ function closePopup() {
     document.getElementById('popup').classList.remove('visible');
     resetGame();
 }
+
+shuffle();
+cards.forEach(card => card.addEventListener('click', flipCard));

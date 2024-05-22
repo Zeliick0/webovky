@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pexeso</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="imgs/logo.png" alt=""></a></div>
+            <ul class="nav-list">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="fotogalerie.html">Fotogalerie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pexeso.html">Pexeso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containertri">
+        <div class="game-info">
+            <p>Počet pokusů: <span id="tries">0</span></p>
+        </div>
+        <div class="game-board">
+            <div class="card" data-flower="ruze">
+                <div class="card-front"><img src="imgs/ruze.jpg" alt="Ruze"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="card" data-flower="levandule">
+                <div class="card-front"><img src="imgs/levandule.jpg" alt="Tulip"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="card" data-flower="aloe">
+                <div class="card-front"><img src="imgs/aloe.jpg" alt="Aloe"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="card" data-flower="ruze">
+                <div class="card-front"><img src="imgs/ruze.jpg" alt="Ruze"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="card" data-flower="levandule">
+                <div class="card-front"><img src="imgs/levandule.jpg" alt="Levandule"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="card" data-flower="aloe">
+                <div class="card-front"><img src="imgs/aloe.jpg" alt="Aloe"></div>
+                <div class="card-back"></div>
+            </div>
+        </div>
+        <button class="reset-button" onclick="resetGame()">Reset!</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Vyhráli jste!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer class="normfooter">
+        <p>&copy; Vytvořil Kryštof Bača 2.A</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

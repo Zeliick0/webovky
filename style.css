@@ -1,0 +1,333 @@
+body {
+    background: url(imgs/pozadi.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.content {
+    margin-top: 80px; 
+    padding: 20px;
+}
+
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.nav-list a:hover {
+    color: #ffcc00;
+}
+
+.uvod{
+width: 100%;
+height: auto;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 5%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    backdrop-filter: blur(10px); 
+    overflow: hidden; 
+}
+
+.containerdva{
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 5%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    backdrop-filter: blur(10px); 
+    overflow: hidden;
+}
+
+.containertri {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1050px;
+    margin: 20px auto;
+    margin-top: 7%;
+}
+.galerie h3{
+    text-decoration: underline;
+}
+
+.karta {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4%;
+ }
+
+.karta:hover {
+    transform: scale(1.1);
+}
+
+.karta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .85;
+}
+
+.popis {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.karta:hover .popis {
+    display: block;
+    opacity: 1;
+}
+
+.karta:hover img{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.blog {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    color: #333; 
+    text-decoration: underline;
+}
+
+article p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+.normfooter {
+    background-color: rgba(46, 45, 45, 0.4);
+    color: #fff;
+    text-align: right;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.blogfooter{
+    background-color: rgba(46, 45, 45, 0.4);
+    color: #fff;
+    text-align: right;
+    padding: 2px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    margin-top: 24%;
+    margin-left: -4%;
+    padding: 15px 30px;
+    font-size: 26px;
+    color: #fff;
+    background-color: rgba(39, 36, 36, 0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #8cac70;
+}
+
+
+
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card .card-front, .card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+}
+
+.card .card-back {
+    background-color: #C4DEA4;
+    transform: rotateY(0deg);
+}
+
+.card.flipped .card-front {
+    transform: rotateY(0deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(180deg);
+}
+
+.card .card-front {
+    transform: rotateY(180deg);
+}
+
+.reset-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #C4DEA4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+    background-color: #a3c29e;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #C4DEA4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.popup.visible {
+    display: block;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #C4DEA4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #a3c29e;
+}

@@ -32,7 +32,7 @@ function disableCards() {
     secondCard.removeEventListener('click', flipCard);
     matches++;
     if (matches === 3) {
-        setTimeout(showPopup, 500); // Delay the win popup by 500ms
+        setTimeout(showPopup, 500); 
     }
     resetBoard();
 }
